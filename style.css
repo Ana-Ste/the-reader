@@ -18,6 +18,11 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
 main {
   background-color: white;
   padding: 20px;
