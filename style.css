@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: beige;
+  padding: 20px;
+}
+
+nav {
+  background-color: tan;
+  padding: 10px;
+}
+
+nav a {
+  color: black;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+article {
+  background-color: beige;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+video {
+  width: 500px;
+}
+
+form {
+  background-color: beige;
+  padding: 20px;
+}
+
+input,
+textarea,
+select {
+  margin: 10px;
+  padding: 5px;
+}
+
+footer {
+  background-color: tan;
+  padding: 20px;
+  text-align: center;
+}
