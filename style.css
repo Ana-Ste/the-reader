@@ -1,30 +1,37 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: antiquewhite;
+  color: black;
+  margin: 0;
 }
 
 header {
-  background-color: beige;
+  background-color: darksalmon;
+  color: black;
   padding: 20px;
 }
 
 nav {
-  background-color: tan;
+  background-color: darkolivegreen;
   padding: 10px;
 }
 
 nav a {
-  color: black;
+  color: white;
   margin-right: 20px;
   text-decoration: none;
 }
 
 nav a:hover,
 nav a:focus {
+  color: goldenrod;
   text-decoration: underline;
 }
 
 main {
-  background-color: white;
+  background-color: antiquewhite;
+  max-width: 1000px;
+  margin: auto;
   padding: 20px;
 }
 
@@ -32,15 +39,25 @@ section {
   margin-bottom: 30px;
 }
 
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 article {
-  background-color: beige;
+  background-color: darksalmon;
+  border: 1px solid sienna;
   padding: 15px;
   margin-bottom: 20px;
+  max-width: 300px;
+  width: 300px;
 }
 
 img {
   width: 200px;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
 }
 
 video {
@@ -48,19 +65,44 @@ video {
 }
 
 form {
-  background-color: beige;
+  background-color: antiquewhite;
+  border: 1px solid sienna;
   padding: 20px;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
 }
 
 input,
 textarea,
 select {
-  margin: 10px;
-  padding: 5px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid darkolivegreen;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+input[type="submit"],
+button {
+  width: auto;
+  padding: 10px;
+  background-color: darkolivegreen;
+  color: white;
+  border: 1px solid darkolivegreen;
 }
 
 footer {
-  background-color: tan;
+  background-color: sienna;
+  color: white;
   padding: 20px;
   text-align: center;
 }
