@@ -27,8 +27,9 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: goldenrod;
+  color: white;
   text-decoration: underline;
+  outline: 3px solid goldenrod;
 }
 
 main {
@@ -49,11 +50,12 @@ section {
 }
 
 article {
+  box-sizing: border-box;
   background-color: darksalmon;
   border: 1px solid sienna;
   padding: 15px;
   margin-bottom: 20px;
-  max-width: 300px;
+  max-width: 100%;
   width: 300px;
   position: relative;
 }
@@ -70,12 +72,14 @@ article {
 
 img {
   width: 200px;
-  height: 250px;
+  height: 310px;
   object-fit: cover;
 }
 
 video {
   width: 500px;
+  max-width: 100%;
+  height: auto;
 }
 
 form {
@@ -120,15 +124,13 @@ button {
 }
 
 .featured-product {
-  width: 33, 33%;
+  width: 33.333%;
   box-sizing: border-box;
 }
 
 .featured-products article {
   background-color: darksalmon;
-  border:
-    1px,
-    solid sienna;
+  border: 1px solid sienna;
   padding: 15px;
 }
 
@@ -137,10 +139,6 @@ button {
   height: 300px;
   object-fit: cover;
   display: block;
-}
-
-.featured-product:nth-child(3) img {
-  object-fit: contain;
 }
 
 @media (max-width: 900px) {
