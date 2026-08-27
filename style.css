@@ -122,7 +122,7 @@ button {
 
 input[type="submit"]:hover,
 button:hover {
-  background-color: seagreen;
+  background-color: darkgreen;
 }
 
 .featured-products {
