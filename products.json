@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "The Little Prince",
+    "description": "A timeless story about friendship, love, and seeing the world with the heart.",
+    "author": "Antoine de Saint-Exupéry",
+    "price": 129,
+    "image": "images/The-little-prince.jpg",
+    "imageAlt": "The Little Prince book cover",
+    "badge": "Popular"
+  },
+  {
+    "id": 2,
+    "name": "Pride and Prejudice",
+    "description": "A timeless story of love, first impressions and finding happiness beyond pride and prejudice",
+    "author": "Jane Austen",
+    "price": 249,
+    "image": "images/Pride-and-prejudice.jpg",
+    "imageAlt": "Pride and Prejudice book cover",
+    "badge": "Classic"
+  },
+  {
+    "id": 3,
+    "name": "Norwegian Wood",
+    "description": "A moving story about love, loss, memory and the complexities of growing up.",
+    "author": "Haruki Murakami",
+    "price": 199,
+    "image": "images/Norwegian-wood.jpg",
+    "imageAlt": "Norwegian Wood book cover",
+    "badge": "Recommended"
+  },
+  {
+    "id": 4,
+    "name": "Sophie's World",
+    "description": "A fascinating journey through philosophy, mystery and the biggest questions about life and existence.",
+    "author": "Jostein Gaarder",
+    "price": 379,
+    "image": "images/Sophie's-world.jpg",
+    "imageAlt": "Sophie's World book cover",
+    "badge": ""
+  },
+  {
+    "id": 5,
+    "name": "The Pilgrimage",
+    "description": "An inspiring journey of self-discovery, faith and finding meaning along the road to Santiago.",
+    "author": "Paulo Coelho",
+    "price": 219,
+    "image": "images/The-pilgrimage.jpg",
+    "imageAlt": "The Pilgrimage book cover",
+    "badge": ""
+  }
+]

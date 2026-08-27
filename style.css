@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: antiquewhite;
-  color: black;
+  background-color: ivory;
+  color: darkslategray;
   margin: 0;
 }
 
 header {
-  background-color: darksalmon;
-  color: black;
+  background-color: darkslategray;
+  color: white;
   padding: 20px;
   position: sticky;
   top: 0;
@@ -15,7 +15,9 @@ header {
 }
 
 nav {
-  background-color: darkolivegreen;
+  background-color: darkslategray;
+  border-top: 1px solid goldenrod;
+  border-bottom: 1px solid goldenrod;
   padding: 10px;
 }
 
@@ -27,13 +29,13 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: white;
+  color: ivory;
   text-decoration: underline;
   outline: 3px solid goldenrod;
 }
 
 main {
-  background-color: antiquewhite;
+  background-color: ivory;
   max-width: 1000px;
   margin: auto;
   padding: 20px;
@@ -51,8 +53,8 @@ section {
 
 article {
   box-sizing: border-box;
-  background-color: darksalmon;
-  border: 1px solid sienna;
+  background-color: white;
+  border: 1px solid darkgoldenrod;
   padding: 15px;
   margin-bottom: 20px;
   max-width: 100%;
@@ -64,8 +66,8 @@ article {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: darkolivegreen;
-  color: white;
+  background-color: goldenrod;
+  color: darkslategray;
   padding: 5px 10px;
   font-weight: bold;
 }
@@ -83,8 +85,8 @@ video {
 }
 
 form {
-  background-color: antiquewhite;
-  border: 1px solid sienna;
+  background-color: white;
+  border: 1px solid darkgoldenrod;
   padding: 20px;
   max-width: 500px;
 }
@@ -101,7 +103,7 @@ select {
   margin-top: 5px;
   margin-bottom: 10px;
   padding: 8px;
-  border: 1px solid darkolivegreen;
+  border: 1px solid seagreen;
   box-sizing: border-box;
 }
 
@@ -113,9 +115,14 @@ input[type="submit"],
 button {
   width: auto;
   padding: 10px;
-  background-color: darkolivegreen;
+  background-color: darkslategray;
   color: white;
-  border: 1px solid darkolivegreen;
+  border: 1px solid darkslategray;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: seagreen;
 }
 
 .featured-products {
@@ -129,8 +136,8 @@ button {
 }
 
 .featured-products article {
-  background-color: darksalmon;
-  border: 1px solid sienna;
+  background-color: white;
+  border: 1px solid darkgoldenrod;
   padding: 15px;
 }
 
@@ -154,8 +161,12 @@ button {
 }
 
 footer {
-  background-color: sienna;
+  background-color: darkslategray;
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+footer a {
+  color: ivory;
 }
