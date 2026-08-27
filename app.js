@@ -1,4 +1,19 @@
 const productList = document.getElementById("productList");
+const showCartButton = document.getElementById("showCartButton");
+const hideCartButton = document.getElementById("hideCartButton");
+const cart = document.getElementById("cart");
+const cartItems = document.getElementById("cartItems");
+
+let products = [];
+const shoppingCart = {};
+
+showCartButton.addEventListener("click", () => {
+  cart.classList.remove("hidden");
+});
+
+hideCartButton.addEventListener("click", () => {
+  cart.classList.add("hidden");
+});
 
 async function loadProducts() {
   try {
@@ -8,7 +23,7 @@ async function loadProducts() {
       throw new Error("Could not load products.");
     }
 
-    const products = await response.json();
+    products = await response.json();
     renderProducts(products);
   } catch (error) {
     console.error(error);
@@ -51,16 +66,47 @@ function renderProducts(products) {
     price.textContent = "Price: " + product.price + " SEK";
     article.appendChild(price);
 
+    const quantityLabel = document.createElement("label");
+    quantityLabel.textContent = "Quantity: ";
+
+    const quantityInput = document.createElement("input");
+    quantityInput.type = "number";
+    quantityInput.min = "1";
+    quantityInput.value = "1";
+    quantityInput.classList.add("quantity-input");
+
+    quantityLabel.appendChild(quantityInput);
+    article.appendChild(quantityLabel);
+
     const button = document.createElement("button");
     button.classList.add("buy-button");
     button.textContent = "Add to cart";
 
     button.addEventListener("click", () => {
+      const quantity = Number(quantityInput.value);
+
+      if (shoppingCart[product.name]) {
+        shoppingCart[product.name] += quantity;
+      } else {
+        shoppingCart[product.name] = quantity;
+      }
+
+      renderCart();
       alert("Added to cart: " + product.name);
     });
 
     article.appendChild(button);
     productList.appendChild(article);
+  });
+}
+
+function renderCart() {
+  cartItems.textContent = "";
+
+  Object.entries(shoppingCart).forEach(([productName, quantity]) => {
+    const item = document.createElement("p");
+    item.textContent = productName + ":" + quantity;
+    cartItems.appendChild(item);
   });
 }
 
