@@ -105,7 +105,7 @@ function renderCart() {
 
   Object.entries(shoppingCart).forEach(([productName, quantity]) => {
     const item = document.createElement("p");
-    item.textContent = productName + ":" + quantity;
+    item.textContent = productName + ": " + quantity;
     cartItems.appendChild(item);
   });
 }
